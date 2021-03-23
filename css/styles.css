@@ -1,0 +1,474 @@
+:root {
+  --subtittle-text-color: #757575;
+  --link-color: #2196f3;
+  --site-color: #212121;
+  --card-set-gap: 30px;
+  --grid-item: 3;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  font-style: normal;
+  color: #757575;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* хедер секуия футер */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Шапка */
+.page-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ececec;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.div-navigation {
+  display: flex;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+.menu {
+  display: flex;
+}
+.menu-item .link {
+  padding-left: 0;
+}
+
+/* WebStudio */
+
+.logo {
+  margin-right: 94px;
+}
+
+.web {
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--link-color);
+}
+
+.studio {
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+/* footer Studio */
+.studi-o {
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+/* ссылки на страници*/
+.link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.menu .menu-item + .menu-item {
+  margin-left: 50px;
+}
+
+/* выделяет профиль на котором сидит юзер */
+.link.current {
+  color: var(--link-color);
+}
+
+.link:hover,
+.link:focus,
+.link-mail:focus,
+.link-mail:hover {
+  color: var(--link-color);
+}
+/* contacts */
+
+.link-mail,
+.link-tel {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  color: var(--subtittle-text-color);
+}
+
+.link-mail-tel {
+  display: inline-flex;
+  margin-left: auto;
+}
+.link-tel {
+  margin-left: 50px;
+}
+
+.link-tel:focus,
+.link-tel:hover {
+  color: var(--link-color);
+}
+
+/* SLOGAN */
+.slogan {
+  background-color: #2f303a;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.slogan-text {
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 4px;
+  min-width: 200px;
+  padding: 10px 32px;
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  background-color: var(--link-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.btn:focus,
+.btn:hover {
+  background-color: #188ce8;
+}
+.btn-button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
+/* visually-hidden  утилита для убирания текста */
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+/* ЧЕМ ЗАНИМАЕМСЯ */
+
+/* Преймущества подзаголовки- subtitle */
+
+.list-subtitle {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+
+.sectuion-item {
+  flex-basis: calc((100% - 30px * 4) / 4);
+  margin-left: 30px;
+}
+
+.subtitle {
+  margin-bottom: 10px;
+  list-style: none;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.subtitle-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--subtittle-text-color);
+}
+
+.section-working {
+  padding-top: 0;
+}
+
+/* Чем занимаемся */
+.section-title {
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.working {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+.working-foto {
+  margin-left: 30px;
+  flex-basis: calc((100% - 30px * 3) / 3);
+}
+
+/* наша команда, имена*/
+.section-command {
+  background-color: #f5f4fa;
+  text-align: center;
+}
+.section-people {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+.command-item {
+  overflow: hidden;
+  margin-left: 30px;
+  flex-basis: calc((100% - 30px * 4) / 4);
+}
+
+.command-item:hover,
+.command-item:focus {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.command-text {
+  padding: 30px 15px;
+  background-color: #ffffff;
+}
+
+.section-caption {
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+/* Описание работы desc */
+.section-desc {
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/* Подвал */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+}
+
+.webstudi-o {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.adress-text {
+  display: inline-block;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.adress-text:hover {
+  color: aquamarine;
+}
+
+.adress-mail {
+  display: inline-block;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 10px;
+}
+.adress-tel {
+  display: inline-block;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.adress-mail:hover,
+.adress-mail:focus,
+.adress-tel:focus,
+.adress-tel:hover {
+  color: var(--link-color);
+}
+
+/* Portfolio!!!!!!!!!!!!!! */
+
+.button {
+  display: flex;
+  justify-content: center;
+  padding: 6px 22px;
+  height: 38px;
+  display: inline;
+  font-family: inherit;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+  color: black;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-left: 8px;
+}
+
+.button:hover,
+.button:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.button-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.button:focus,
+.button:hover {
+  outline: none;
+  border: none;
+  background-color: var(--link-color);
+  color: #ffffff;
+}
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.item {
+  flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.team-item {
+  --grid-item: 3;
+}
+.item:focus,
+.item:hover {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.card-div {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+
+.item-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0px 1px 3px rgba(150, 141, 141, 0.12);
+}
+
+.contents {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: #ffffff;
+}
+
+.contents-name {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+  margin-bottom: 4px;
+}
+
+.contents-merch {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
