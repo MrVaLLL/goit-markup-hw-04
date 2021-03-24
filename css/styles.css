@@ -74,7 +74,7 @@ img {
   align-items: center;
 }
 .nav {
-  display: flex;
+  display: inline-flex;
   align-items: center;
 }
 .menu {
@@ -161,16 +161,24 @@ img {
 
 /* SLOGAN */
 .slogan {
+  background-color: #000000;
   display: block;
-  background-image: url(../images/hero.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+.overlay {
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero.jpg');
+}
 .slogan-text {
   max-width: 696px;
   /* padding: auto; */
@@ -231,11 +239,37 @@ img {
   margin-left: -30px;
 }
 
-.sectuion-item {
+.subtitle-item {
   flex-basis: calc((100% - 30px * 4) / 4);
   margin-left: 30px;
 }
 
+.subtitle-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* иконки */
+.antenna::before {
+  background-image: url('../images/icons/antenna.svg');
+}
+
+.clock::before {
+  background-image: url('../images/icons/clock.svg');
+}
+
+.diagram::before {
+  background-image: url('../images/icons/diagram.svg');
+}
+
+.astronaut::before {
+  background-image: url('../images/icons/astronaut.svg');
+}
+/* подзаголовок > h3 */
 .subtitle {
   margin-bottom: 10px;
   list-style: none;
@@ -245,7 +279,7 @@ img {
   text-transform: uppercase;
   color: #212121;
 }
-
+/* подзаголовок > p */
 .subtitle-text {
   font-weight: normal;
   font-size: 14px;
@@ -268,6 +302,7 @@ img {
   padding-top: 0;
 }
 
+/* список фото */
 .working {
   display: flex;
   flex-wrap: wrap;
@@ -288,23 +323,23 @@ img {
   flex-wrap: wrap;
   margin-left: -30px;
 }
-.command-item {
+.people-item {
   overflow: hidden;
   margin-left: 30px;
   flex-basis: calc((100% - 30px * 4) / 4);
 }
-
-.command-item:hover,
-.command-item:focus {
+.people-item:hover,
+.people-item:focus {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.command-text {
+
+/* Описание работы desc */
+.people-text {
   padding: 30px 15px;
   background-color: #ffffff;
 }
-
-.section-caption {
+.people-caption {
   cursor: pointer;
   font-style: normal;
   font-weight: 500;
@@ -313,9 +348,7 @@ img {
   letter-spacing: 0.03em;
   color: #212121;
 }
-
-/* Описание работы desc */
-.section-desc {
+.people-desc {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
@@ -348,7 +381,7 @@ img {
   color: aquamarine;
 }
 
-.adress-mail {
+.footer-mail {
   display: inline-block;
   font-style: normal;
   font-size: 14px;
@@ -357,7 +390,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 10px;
 }
-.adress-tel {
+.footer-tel {
   display: inline-block;
   font-style: normal;
   font-size: 14px;
@@ -366,10 +399,10 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.adress-mail:hover,
-.adress-mail:focus,
-.adress-tel:focus,
-.adress-tel:hover {
+.footer-mail:hover,
+.footer-mail:focus,
+.footer-tel:focus,
+.footer-tel:hover {
   color: var(--link-color);
 }
 
