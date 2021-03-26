@@ -74,7 +74,6 @@ img {
 
 .menu {
   display: flex;
-  list-style: none;
 }
 .menu-item:not(:last-child) {
   margin-right: 50px;
@@ -86,7 +85,7 @@ img {
   display: inline-block;
   text-decoration: none;
   padding-top: 24px;
-  padding-bottom: 25px;
+  padding-bottom: 26px;
   margin-right: 94px;
 }
 .web {
@@ -160,7 +159,7 @@ img {
   display: flex;
   align-items: center;
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 30px;
   color: var(--text-link-color);
   font-weight: 500;
   line-height: 1.14;
