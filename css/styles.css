@@ -381,7 +381,9 @@ img {
 }
 
 .people-logsocial:hover,
-.social:hover {
+.social:hover,
+.people-logsocial:focus,
+.social:focus {
   background-color: #2196f3;
   fill: #ffffff;
 }
@@ -475,7 +477,8 @@ img {
 .footer-logsocial {
   fill: currentColor;
 }
-.footer-social-link:hover {
+.footer-social-link:hover,
+.footer-social-link:focus {
   background-color: #2196f3;
   color: #ffffff;
 }
