@@ -534,10 +534,7 @@ img {
   flex-basis: calc((100% - 10px * 4) / 4);
   margin-right: 10px;
 }
-.footer-box {
-  display: flex;
-  align-items: baseline;
-}
+
 .footer-box-info {
   margin-right: 70px;
 }
