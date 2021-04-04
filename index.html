@@ -65,32 +65,15 @@
       <section class="slogan overlay">
         <div class="container">
           <h1 class="slogan-text">Эффективные решения для вашего бизнеса</h1>
-          <button class="btn-slogan" type="button"><span class="btn-button">Заказать услугу</span></button>
+          <button data-modal-open class="btn-slogan" type="button">
+            <span class="btn-button">Заказать услугу</span>
+          </button>
         </div>
       </section>
 
       <!--Основные этапы (убрать заголовок "Основные этапы" потом в СSS)-->
       <section class="section">
-        
         <div class="container">
-
-          <!-- 
-            
-            
-            ЧАТ ОБРАЗЕЦ 
-                 
-          
-          
-          -->
-          <button class="chat-button"></button>
-          <!-- 
-            
-            
-            ЧАТ ОБРАЗЕЦ 
-          
-          
-          -->
-
           <h2 class="visually-hidden">Основные этапы</h2>
           <!--  Подзаголовок -->
 
@@ -322,7 +305,7 @@
       </section>
 
       <!-- Постоянные клиенты -->
-      
+
       <section class="section">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
@@ -445,5 +428,12 @@
         <!-- social -->
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close>Закрыть</button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
